@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdumaxApp</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="leer.png">
+</head>
+
+<style>
+    
+</style>
+<body>
+    <header>
+        <a href="#home" class="logo">EdumaxApp<span>.</span></a>
+        <div class="funcionNav" onclick="navFuncion();"></div>
+        <ul class="navegador">
+            <li><a href="#home" onclick="navFuncion();" >Inicio</a></li>
+            <li><a href="#catalogo" onclick="navFuncion();">Servicios</a></li>
+            <li><a href="#nosotros" onclick="navFuncion();">Nosotros</a></li>
+            <li><a href="#sugerencias" onclick="navFuncion();">Informacion</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="contenedor">
+            <h2>EdumaxApp</h2>
+            <br>
+            <p>La aplicación donde encontraras contenido gratis para adquirir conocimiento de calidad, con esto lograras mejorar y fortalecer habilidades, oportunidades, ¿Que esperas para empezar?</p>
+            <a href="#sugerencias" class="btn">QUIERO SABER MÁS</a>
+        </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+        <div class="titulo">
+            <h2 class="Titulo-texto"><span>S</span>ervicios</h2>
+            <p>En este apartado encontraras los servicios que ofrecemos </p>
+        </div>
+
+        <div class="contenido">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios/pro1.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Euphoria</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios/pro2.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Friends The Reunion</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios/pro4.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Harry Potter</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios/pro3.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Hotel Transylvania</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios/pro5.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Madre solo hay dos</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios/pro6.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Mihael-Schumacher</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <a href="catalogo.html" class="btn">Ver Todo</a>
+        </div>
+    </section>
+    
+    
+    
+
+    <section class="nosotros" id="nosotros">
+        <div class="row">
+            <div class="col50">
+                <h2 class="Titulo-texto"><span>N</span>osotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab? Explicabo distinctio minima voluptatum ab enim facilis! Similique optio ducimus officia, molestias vitae necessitatibus laborum, ad enim dicta delectus laudantium.
+                Possimus minus, velit hic nostrum, voluptatem odio impedit ratione et maxime ab repellat! Fuga aperiam fugit explicabo magni sit excepturi aliquid sunt temporibus dignissimos vel, quos reiciendis tempore, corrupti sint!</p> <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione consequatur nostrum consequuntur recusandae, ad vel laboriosam repudiandae! Doloribus sint pariatur, error molestias voluptatem voluptatibus harum, aliquam voluptatum nesciunt, sit quisquam.
+            </div>
+        
+
+        <div class="col50">
+            
+            <div class="imgBx">
+                <img src="Nosotros.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="sugerencias" id="sugerencias">
+    <div class="titulo">
+        <h2 class="Titulo-texto"><span>I</span>nformación</h2>
+        <p>¡Animate! Ya es hora de empezar adquirir nuevos y geniales conocimientos, peudes alojar tus datos en las cajas de texto para brindarte más información.</p>
+    </div>
+
+    <div class="contactar">
+        <h3>Tus Datos Aqui: </h3>
+        <div class="inputBox">
+            <input type="text" placeholder="Nombre">
+        </div>
+
+
+        <div class="inputBox">
+            <input type="text" placeholder="Email">
+        </div>
+
+        <div class="inputBox">
+            <input type="text" placeholder="Asignatura Favorita">
+        </div>
+
+        
+        <div class="inputBox">
+            <input type="submit" value="Enviar">
+        </div>
+    </div>
+    </div>
+
+        
+    </section>
+    
+    <div class="derechos">
+        <p>Copyright 2022 <span> Edinson Morales</span> Todos los derechos reservados</p>
+    </div>
+
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+
+        function navFuncion(){
+            const funcionNav = document.querySelector('.funcionNav');
+            const navegador= document.querySelector('.navegador')
+            funcionNav.classList.toggle('active');
+            navegador.classList.toggle('active')
+        }
+    </script>
+
+
+</body>
+</html>
