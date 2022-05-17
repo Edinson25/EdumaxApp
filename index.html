@@ -7,6 +7,7 @@
     <title>EdumaxApp</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="leer.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <style>
@@ -24,7 +25,7 @@
         </ul>
     </header>
 
-    <section class="banner" id="home">
+    <section class="banner" id="home" data-aos="fade-down" data-aos-duration="1000">
         <div class="contenedor">
             <h2>EdumaxApp</h2>
             <br>
@@ -33,13 +34,13 @@
         </div>
     </section>
 
-    <section class="catalogo" id="catalogo">
+    <section class="catalogo" id="catalogo" >
         <div class="titulo">
             <h2 class="Titulo-texto"><span>S</span>ervicios</h2>
             <p>En este apartado encontraras los servicios que ofrecemos </p>
         </div>
 
-        <div class="contenido">
+        <div class="contenido" data-aos="zoom-out-down"  data-aos-duration="1000">
             <div class="box">
                 <div class="imgBx">
                     <img src="servicios/pro1.jpg" alt="">
@@ -56,7 +57,7 @@
                 </div>
 
                 <div class="texto">
-                    <h3>Autodidacta</h3>
+                    <h3>Atención al cliente 24x7</h3>
                 </div>
             </div>
 
@@ -66,7 +67,7 @@
                 </div>
 
                 <div class="texto">
-                    <h3>Educación de calidad</h3>
+                    <h3>Informes diarios de actividad</h3>
                 </div>
             </div>
 
@@ -88,7 +89,7 @@
                 </div>
 
                 <div class="texto">
-                    <h3>Repeticiones infinitas</h3>
+                    <h3>Seguimiento personalizado</h3>
                 </div>
             </div>
 
@@ -111,12 +112,11 @@
     
     
 
-    <section class="nosotros" id="nosotros">
+    <section class="nosotros" id="nosotros" data-aos="fade-down" data-aos-duration="1000">
         <div class="row">
             <div class="col50">
                 <h2 class="Titulo-texto"><span>N</span>osotros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab? Explicabo distinctio minima voluptatum ab enim facilis! Similique optio ducimus officia, molestias vitae necessitatibus laborum, ad enim dicta delectus laudantium.
-                Possimus minus, velit hic nostrum, voluptatem odio impedit ratione et maxime ab repellat! Fuga aperiam fugit explicabo magni sit excepturi aliquid sunt temporibus dignissimos vel, quos reiciendis tempore, corrupti sint!</p> <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione consequatur nostrum consequuntur recusandae, ad vel laboriosam repudiandae! Doloribus sint pariatur, error molestias voluptatem voluptatibus harum, aliquam voluptatum nesciunt, sit quisquam.
+                <p>EdumaxApp una aplicación enfocada en los jovenes de areas rurales, buscamos disminuir el indice de desercion estudiantil, en nuestra aplicación podras encontrar cursos gratuitos y cursos pagos totalmente certificables.</p> <br><br> Podras descargar la aplicación con acceso a internet, pero mira el lado bueno para usar la  aplicación no es necesario que estes conectado a una red de internet, simplemente cuando descargues la aplicación se te descargaran los cursos en tu celular y estaras listo para tomar tus lecciones desde casa.
             </div>
         
 
@@ -130,7 +130,7 @@
     </section>
 
 
-    <section class="sugerencias" id="sugerencias">
+    <section class="sugerencias" id="sugerencias" data-aos="fade-down" data-aos-duration="1000">
     <div class="titulo">
         <h2 class="Titulo-texto"><span>I</span>nformación</h2>
         <p>¡Animate! Ya es hora de empezar adquirir nuevos y geniales conocimientos, peudes alojar tus datos en las cajas de texto para brindarte más información.</p>
@@ -165,6 +165,7 @@
         <p>Copyright 2022 <span> Edinson Morales</span> Todos los derechos reservados</p>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script type="text/javascript">
         window.addEventListener('scroll', function(){
@@ -179,6 +180,8 @@
             funcionNav.classList.toggle('active');
             navegador.classList.toggle('active')
         }
+
+        AOS.init();
     </script>
 
 
